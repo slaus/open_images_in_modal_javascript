@@ -1,0 +1,66 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.popup>div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: max-content;
+}
+.popup>div>img {
+    display: block;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    margin: 15px;
+}
+.speasyimagegallery-next, .speasyimagegallery-prev {
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+    height: auto;
+    top: 35px;
+    bottom: 35px;
+    transition: all .3s;
+}
+.speasyimagegallery-prev {
+    left: 35px;
+}
+.speasyimagegallery-prev > span {
+    left: 20px;
+}
+.speasyimagegallery-next {
+    right: 35px;
+}
+.speasyimagegallery-next > span {
+    left: 4px;
+}
+.speasyimagegallery-next > span, .speasyimagegallery-prev > span {
+    display: block;
+    position: relative;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-top: 5px solid #fff;
+}
+.speasyimagegallery-prev > span {
+    border-left: 5px solid #fff;
+    transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+}
+.speasyimagegallery-next > span {
+    left: -3px;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg) translateY(-50%);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+}
